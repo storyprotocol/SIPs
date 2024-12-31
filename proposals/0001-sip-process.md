@@ -1,90 +1,53 @@
 ---
-simd: '0001'
-title: Story Proposal Process
+number: '00001'
+title: SIP Process
 authors:
-  - Jacob Creech (Story Foundation)
-  - Ben Hawkins (Story Foundation)
-category: Meta
+  - Ramtin M. Seraj
+sponsors: 
+  - Raul Martinez
+created: 2024-12-30
 type: Meta
-status: Living
-created: 2022-10-18
+status: Draft
+supersedes: 
+superseded-by: 
+extends: 
 ---
 
-## What is a Proposal?
+## What is a Story Improvement Proposal?
 
-A proposal is a design document describing a new feature for Story or its
-processes or environment. The proposal should document the rationale for the
-feature and enough documentation to understand the implementation.
+A SIP is a document that proposes standards, guidelines, and recommendations for the Story network and its broader ecosystem. It must include complete rationale, context, and sufficient details for the proper implementation.
 
 ## Rationale
 
-A proposal is intended to be reviewed by core engineering and community members
-keeping in mind security concerns, tradeoffs, and backwards compatibility.
-Having a proposal process helps identify design issues early, alert the
-community on a change, helps scale newer contributors on the architecture, and
-acts as a historical record of the design decisions that have gone into Story.
-For implementors, the proposal is a blueprint for the feature and helps track
-the development of a feature.
+Each proposal undergoes review by community members, with careful consideration of security concerns, tradeoffs, and backwards compatibility. This process serves multiple purposes: it helps catch design issues early, keeps the community informed of changes, assists new contributors in understanding the architecture, and creates a historical record of Story's design decisions. For developers, the proposal acts as a blueprint that guides feature development and implementation.
 
 ## When you need to follow this process
 
 You need to follow this process if you intend to make "substantial" changes to
-the Validator, RPC, consensus, or a change to the proposal process itself. What
-constitutes a "substantial" change is evolving based on community norms and
-varies depending on what part of the ecosystem you are proposing to change, but
-may include the following:
+the network architecture and its parameters, software implementation details, and other standards impacting the broader ecosystem. 
 
-- A change in format of a RPC API method
-- Networking interface changes between validators
-- Compute requirement changes on the runtime
+The definition of a "substantial" change evolves with community norms and varies across different parts of the ecosystem. Such changes may include the following:
 
-Some changes do not require a proposal:
+- A change in format user interfaces (e.g. JSON-RPC API changes)
+- Protocol parameters (e.g. target block production rate)
+- Node hardware minimum requirement changes
 
-- Rephrasing, reorganizing, refactoring, or otherwise "changing shape does not
-change meaning".
-- Additions that strictly improve objective, numerical quality criteria
-(warning removal, speedup, better platform coverage, more parallelism, trap
-more errors, etc.)
+Some changes do not require a proposal, for example:
 
-## Proposal Types
+- Rephrasing, reorganizing, refactoring, or otherwise changing structure without altering meaning.
+- Performance improvements to the node software without impacting any other nodes or users.
 
-There are two types of proposals:
+## SIP Types
 
-- A **Standard** Proposal describes any change that affects most or all Story
-implementations, such as a change to the network protocol, consensus, proposed
-application standards/conventions, block or transaction validity, or any change
-or addition that affects the interoperability of applications using Story.
-Standard proposals can be broken down into the following categories:
+Story Improvement Proposals (SIPs) fall into these categories:
 
-  - **Core**: Anything that affects consensus or substantial changes to the
-validator.
-  - **Networking**: Changes or substantial improvements to network protocol
-specifications.
-  - **Interfaces**: Breaking changes around the client JSON RPC API
-specifications and standards.
+- **Standard SIP**: A proposal that describes changes to the Story Network, including but not limited to blockchain architecture and operational parameters, node software implementation details, and other major changes to the core APIs and user interface. For example, a proposal in this category can discuss changes to the block production details or node level networking parameters.
+- **Ecosystem SIP:**A proposal describing application-level standards, conventions and specifications that may affect applications, tools, and services built on top of the Story network. These proposals outline conventions, interfaces, and protocols that ecosystem participants can follow to ensure compatibility and interoperability across the platform.  Such standards may encompass development tooling, libraries, APIs, and other ecosystem applications that enhance the functionality and user experience of the Story network. For example, a proposal in this category can define what method and events a non-fungible token contract should support.
+- **Meta SIP**: A proposal that describes or suggests changes to the SIP process, including its structure, lifecycle, and guidelines. For example, a proposal in this category might suggest expanding SIPs into additional categories.
 
-- A **Meta** Proposal describes a process surrounding Story or proposes a
-change to (or an event in) a process. Process Proposals are like Standard
-Proposals but apply to areas other than the Story protocol itself. They may
-propose an implementation, but not to Story's codebase; they often require
-community consensus and users are typically not free to ignore them. Examples
-include procedures, guidelines, changes to the decision-making process, and
-changes to the tools or environment used in Story development. Any meta-SIP is
-also considered a Process Proposals.
+## SIP Lifecycle
 
-## Proposal Lifecycle
-
-The stages in a lifecycle of a proposal are as follows:
-
-- Idea
-- Draft
-- Review
-- Accepted
-- Living
-- Stagnant
-- Withdrawn
-- Implemented
-- Activated
+Every SIP starts as an Idea and follows the lifecycle as it progresses.
 
 ```mermaid
 flowchart LR
@@ -92,39 +55,43 @@ flowchart LR
   Draft
   Review
   Accepted
-
-  subgraph fail[&nbsp];
-    Stagnant
-    Withdrawn
-  end
-
-  style fail fill:#ffe8e7,stroke:none
-  style Accepted fill:#f3f8dc,stroke:#c3db50;
+  Living
 
   Idea ---> Draft;
   Draft ---> Review;
   Review ---> Accepted;
   Accepted ---> Implemented;
-  Implemented ---> Activated;
-  Review ---> Living;
+  Accepted ---> Living;
+  Implemented ---> Released;
+  Implemented ---> Withdrawn;
   Accepted ---> Withdrawn;
 
   Draft ---> Stagnant;
   Review ---> Stagnant;
   Review ---> Withdrawn;
+
+  style success fill:#f3f8dc,stroke:none;
+  
+  subgraph success[&nbsp;];
+    Accepted
+    Living
+    Implemented
+    Released
+  end
+  
+  subgraph fail[&nbsp;];
+    Withdrawn
+    Stagnant
+  end
+
+  style fail fill:#ffe8e7,stroke:none
 ```
 
 ### Idea
 
-At the idea stage, parties involved in the proposal are you -- the champion or
-proposal author -- the reviewers, and the Story Core Contributors.
+Every SIP starts as an idea first shared with the community through the story forum, and after thorough discussion and attracting a supports and it can then be converted int a SIP draft. 
 
-Before you begin writing a formal proposal, you should vet your idea. Ask the
-Story core community first if an idea is original to avoid wasting time on
-something that will be rejected based on prior research. Be sure to post your
-ideas to the 
-[SIP ideas discussion page](https://github.com/piplabs/SIPs/discussions/categories/ideas)
-and gather feedback before making your formal Proposal
+Each idea needs at least one sponsor , a well-known community member with expertise in the subject matter, before turning into a draft. 
 
 ### Draft
 
@@ -136,11 +103,11 @@ is descriptive)
 - Fill in the proposal. Put care into the details: proposals that do not
 present convincing motivation, demonstrate lack of understanding of the
 design's impact, or are disingenuous about the drawbacks or alternatives tend
-to be poorly received. Low quality proposals with limited engagement will be 
+to be poorly received. Low quality proposals with limited engagement will be
 closed by SIP repository maintainers.
 - Submit a pull request.
 - Now that your proposal has an open pull request, use the issue number of the
-PR to update the `XXXX-` prefix to the number.
+PR to update the `XXXXX-` prefix to the number (please update both the file name and document headers)
 
 ### Review
 
@@ -169,20 +136,12 @@ implementing their accepted feature.
 
 ### Implemented
 
-When all relevant teams have completed development of the SIP's feature, the 
-SIP is "Implemented".
+Once all relevant teams have completed development of the SIP's proposal, the SIP moves to "Implemented" status.
 
-### Activated
+### Released
 
-A proposal will have the status Activated once it has been implemented,
-tested, and finally activated on mainnet beta. 
-
-### Living
-
-A special status for SIPs that are designed to be continually updated and not
-reach a state of finality. This includes most notably SIP-1. This status must
-undergo extra scrutiny and review when updating the status from review to
-living.
+A proposal will have the status Released once it has been implemented,
+tested, and finally released on the mainnet.
 
 ### Stagnant
 
@@ -196,3 +155,10 @@ The author has withdrawn the proposal. This state has finality and can no
 longer be resurrected. If the idea is pursued at a later date it is considered
 a new proposal.
 
+## Acknowledgments
+
+This proposal draws inspiration from the excellent work of the authors of:
+
+- [Ethereum's Improvement Proposals (EIPs) document](https://www.notion.so/Process-16dd1c2291b48006b056d8d3444bb02f?pvs=21)
+- [Solana's SIMD](https://github.com/solana-foundation/solana-improvement-documents/blob/main/proposals/0001-simd-process.md)
+- [Flow's Flip](https://github.com/onflow/flips)

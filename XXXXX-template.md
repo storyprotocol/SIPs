@@ -1,4 +1,5 @@
 ---
+status: draft
 number: 'XXXXX' (update this part after PR creation)
 title: Title of SIP
 authors:
