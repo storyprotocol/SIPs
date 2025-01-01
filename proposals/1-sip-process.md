@@ -89,50 +89,25 @@ flowchart LR
 
 ### Idea
 
-Every SIP starts as an idea first shared with the community through the story forum, and after thorough discussion and attracting a supports and it can then be converted int a SIP draft. 
-
-Each idea needs at least one sponsor , a well-known community member with expertise in the subject matter, before turning into a draft. 
+Every SIP begins as an idea shared with the community through the Story forum. After thorough discussion and gathering support, it can be converted into a SIP draft. Before this conversion, each idea requires at least one sponsor—a well-known community member with expertise in the subject matter. 
 
 ### Draft
 
 To begin drafting the proposal, do the following:
 
 - Fork the proposal repository
-- Copy `XXXX-template.md` to `proposals/XXXX-my-feature.md` (where "my-feature"
-is descriptive)
-- Fill in the proposal. Put care into the details: proposals that do not
-present convincing motivation, demonstrate lack of understanding of the
-design's impact, or are disingenuous about the drawbacks or alternatives tend
-to be poorly received. Low quality proposals with limited engagement will be
-closed by SIP repository maintainers.
-- Submit a pull request.
-- Now that your proposal has an open pull request, use the issue number of the
-PR to update the `XXXXX-` prefix to the number (please update both the file name and document headers)
+- Copy `XXXX-template.md` to `proposals/XXXX-proposal-title.md` (where "proposal-title" is descriptive)
+- Proposals must be detailed and well-researched. They should provide strong motivation, demonstrate understanding of design implications, and address potential drawbacks and alternatives thoroughly. Incomplete or poorly justified proposals may be rejected. 
+- Commit the changes and create a pull request.
+- Please use the issue number of the pull request to update the `XXXXX-` in the file name and headers of the proposal.
 
 ### Review
 
-During review, the owner of the proposal is in charge of gathering and
-integrating feedback. The most relevant core contributors to the proposal
-should be included in the review process. Review will take place completely
-through Github so that all comments are collected and documented. Once
-consensus is met by the core contributors, the proposal can either be accepted
-or withdrawn. This step is typically taken when enough tradeoffs have been
-considered for the core contributors to make a decision. It is not necessary
-for all participants to reach consensus. However, there should not be a strong
-consensus against the proposal outside of the core contributors.
+During the draft phase, proposal authors are responsible for collecting and incorporating feedback. Key core contributors relevant to the proposal must be included in the review process. All reviews occur through GitHub to ensure proper documentation of comments. Once authors feel their proposal is ready for review, they can update its state to "review" and present it at one of the Story Foundation's online review meetings. During these meetings, a decision about the proposal is made after thorough consideration of various tradeoffs. 
 
 ### Accepted
 
-Some accepted proposals represent vital features that can be implemented right
-away. Other accepted proposals can wait until some arbitrary core contributor
-feels like doing the work. Every accepted proposal should have an associated
-tracking issue in the Story repository. If the implementation requires the
-feature to be activated using the feature activation program, a feature-gate
-issue for tracking across clusters should also be created. While it is not
-*necessary* for the proposal author to also write the implementation, it is by
-far the most effective way to see a proposal through to completion: authors
-should not expect that other project developers will take on responsibility for
-implementing their accepted feature.
+Accepted proposals fall into two categories: vital features for immediate implementation and lower-priority features that await a core contributor's attention. Each accepted proposal must have a tracking issue in the Story repository. While proposal authors aren't necessary required to implement their proposals, this is the most effective path to completion—authors shouldn't assume other project developers will take on the implementation work.
 
 ### Implemented
 
@@ -140,20 +115,15 @@ Once all relevant teams have completed development of the SIP's proposal, the SI
 
 ### Released
 
-A proposal will have the status Released once it has been implemented,
-tested, and finally released on the mainnet.
+A proposal will have the status Released once it has been implemented, tested, and finally released on the mainnet.
 
 ### Stagnant
 
-If a proposal reaches 6 months without activity, the proposal will be
-marked as stale to be closed. A new proposal can be opened if the proposal is
-closed and has a chance of reaching consensus.
+If a proposal remains inactive for 6 months, it will be marked as stale and closed. However, a new proposal can be submitted if the closed proposal has potential for reaching consensus.
 
 ### Withdrawn
 
-The author has withdrawn the proposal. This state has finality and can no
-longer be resurrected. If the idea is pursued at a later date it is considered
-a new proposal.
+The author has withdrawn the proposal. This decision is final and irreversible. Any future pursuit of this idea will be treated as a new proposal.
 
 ## Acknowledgments
 
