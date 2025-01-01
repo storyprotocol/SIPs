@@ -1,5 +1,5 @@
 ---
-number: '00001'
+number: '1'
 title: SIP Process
 authors:
   - Ramtin M. Seraj
@@ -159,6 +159,6 @@ a new proposal.
 
 This proposal draws inspiration from the excellent work of the authors of:
 
-- [Ethereum's Improvement Proposals (EIPs) document](https://www.notion.so/Process-16dd1c2291b48006b056d8d3444bb02f?pvs=21)
+- [Ethereum's Improvement Proposals (EIPs) document](https://eips.ethereum.org/EIPS/eip-1)
 - [Solana's SIMD](https://github.com/solana-foundation/solana-improvement-documents/blob/main/proposals/0001-simd-process.md)
 - [Flow's Flip](https://github.com/onflow/flips)
