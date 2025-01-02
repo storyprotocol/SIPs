@@ -9,8 +9,8 @@ time. Below
 is a brief summary of the approved SIPs that outlines the key 
 details of the 
 SIP process (refer to 
-[SIP-00001](https://github.com/piplabs/SIPs/blob/main/proposals/00001-sip-process.md) 
-for more details).
+[SIP-00001](https://github.com/piplabs/SIPs/blob/main/proposals/00001-sip-process.md)
+ for more details).
 
 ## How To Start A SIP
 
