@@ -10,7 +10,8 @@ for more details).
 ## How To Start A SIP
 
 Well! A SIP doesn’t start from this repo, every SIP starts as an idea first 
-shared with the community through the story forum, and after thorough 
+shared with the community through [the Story 
+'s community forum](https://forum.story.foundation/), and after thorough 
 discussion and attracting a supports and it can then be converted int a SIP 
 draft.  please refer to [SIP-0001](https://github.com/piplabs/SIPs/blob/main/proposals/0001-sip-process.md)
  for more details.

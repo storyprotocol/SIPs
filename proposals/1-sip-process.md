@@ -120,8 +120,9 @@ flowchart LR
 
 ### Idea
 
-Every SIP begins as an idea shared with the community through the Story 
-forum. After thorough discussion and gathering support, it can be converted 
+Every SIP begins as an idea shared with the community through [the Story 
+'s community forum](https://forum.story.foundation/). After thorough discussion and gathering 
+support, it can be converted 
 into a SIP draft. Before this conversion, each idea requires at least one 
 sponsor—a well-known community member with expertise in the subject matter. 
 
