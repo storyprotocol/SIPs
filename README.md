@@ -8,8 +8,8 @@ building the future of the Story and its ecosystem —one SIP at a
 time. Below 
 is a brief summary of the approved SIPs that outlines the key 
 details of the 
-SIP process (refer to 
-[SIP-0001](https://github.com/piplabs/SIPs/blob/main/proposals/0001-sip-process.md) 
+SIP process (refer to [SIP-0001]
+(https://github.com/piplabs/SIPs/blob/main/proposals/0001-sip-process.md) 
 for more details).
 
 ## How To Start A SIP
