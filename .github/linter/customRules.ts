@@ -209,7 +209,7 @@ export const metadataAuthorsIsValid = {
   },
 }
 
-export const metadataCategoryIsValid = {
+export const metadataTypeIsValid = {
   names: ["front-matter-has-valid-type"],
   description: "Proposal front matter should have a valid type",
   tags: ["front-matter"],

@@ -2,10 +2,9 @@ import markdownlint from "markdownlint"
 import {
   enforceHeaderStructure,
   enforceMetadataStructure,
-  metadataSimdIsValid,
+  metadataSipIsValid,
   metadataTitleIsValid,
   metadataAuthorsIsValid,
-  metadataCategoryIsValid,
   metadataTypeIsValid,
   metadataStatusIsValid,
 } from "./customRules"
@@ -120,10 +119,9 @@ async function main() {
     customRules: [
       enforceHeaderStructure,
       enforceMetadataStructure,
-      metadataSimdIsValid,
+      metadataSipIsValid,
       metadataTitleIsValid,
       metadataAuthorsIsValid,
-      metadataCategoryIsValid,
       metadataTypeIsValid,
       metadataStatusIsValid,
     ],
