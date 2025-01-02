@@ -1,13 +1,8 @@
 ---
-status: draft
 number: 'XXXXX' (update this part after PR creation)
 title: Title of SIP
-authors:
-  - First Author's Name (author1@example.org)
-  - Second Author's name (author2@example.org)
-  - ...
-sponsors: 
-  - First Sponsor's Name (expert@example.org)
+authors: First Author's Name (author1@example.org), Second Author's name (author2@example.org)
+sponsors: First Sponsor's Name (expert@example.org)
 created: (fill me in with today's date, YYYY-MM-DD)
 type: Standard/Ecosystem/Meta
 status: Draft
@@ -40,7 +35,7 @@ use-cases benefit from this solution? Is there any important consideration
 (e.g. edge cases) that should be considered? How will users (or other 
 contributors) benefit from this work? 
 
-## New Terminologies
+## New Terminology
 
 Is there any new terminology introduced with this proposal? 
 

@@ -61,11 +61,11 @@ export const enforceHeaderStructure = {
 const expectedHeadings = [
   "## Summary",
   "## Motivation",
+  "## New Terminology,
+  "## Proposal",
+  "## Drawbacks",
   "## Alternatives Considered",
-  "## New Terminology",
-  "## Detailed Design",
-  "## Impact",
-  "## Security Considerations",
+  "## User Impact",
 ]
 
 export const enforceMetadataStructure = {
@@ -110,26 +110,25 @@ export const enforceMetadataStructure = {
 }
 
 const requiredMetadata = {
-  simd: {},
+  status: {},
+  number: {},
   title: {},
   authors: {},
-  category: {},
+  sponsors: {},
+  created: {},
   type: {},
   status: {},
-  created: {},
 }
 
 const optionalMetadata = [
-  "feature",
   "supersedes",
   "superseded-by",
   "extends",
-  "development",
 ]
 
-export const metadataSimdIsValid = {
-  names: ["front-matter-has-simd"],
-  description: "Metadata `simd` is a 4 digit numerical string",
+export const metadataSipIsValid = {
+  names: ["front-matter-has-number"],
+  description: "Metadata `number` is a 5 digit numerical string",
   tags: ["front-matter"],
   function: function rule(params: RuleParams, onError: RuleOnError) {
     const string = params.frontMatterLines
@@ -140,20 +139,20 @@ export const metadataSimdIsValid = {
     const frontMatter: any = yaml.load(string)
     if (!frontMatter) return
 
-    const simd: string = frontMatter.simd
-    if (!simd) return
+    const sip: string = frontMatter.number
+    if (!sip) return
 
-    if (isNaN(Number(simd))) {
+    if (isNaN(Number(sip))) {
       onError({
         lineNumber: 1,
-        detail: "Front matter `simd` must be a numerical string",
+        detail: "Front matter `number` must be a numerical string",
       })
     }
 
-    if (simd.length !== 4) {
+    if (sip.length !== 5) {
       onError({
         lineNumber: 1,
-        detail: "Front matter `simd` must be 4 digits",
+        detail: "Front matter `number` must be 5 digits",
       })
     }
   },
@@ -211,31 +210,6 @@ export const metadataAuthorsIsValid = {
 }
 
 export const metadataCategoryIsValid = {
-  names: ["front-matter-has-valid-category"],
-  description: "Proposal front matter should have a valid category",
-  tags: ["front-matter"],
-  function: function rule(params: RuleParams, onError: RuleOnError) {
-    const string = params.frontMatterLines
-      .join("\n")
-      .trim()
-      .replace(/^-*$/gm, "")
-
-    const frontMatter: any = yaml.load(string)
-    if (!frontMatter) return
-
-    const category: string = frontMatter.category
-    if (!category) return
-
-    if (!["Meta", "Standard"].includes(category)) {
-      onError({
-        lineNumber: 1,
-        detail: `\`${category}\` is not supported as a value for category`,
-      })
-    }
-  },
-}
-
-export const metadataTypeIsValid = {
   names: ["front-matter-has-valid-type"],
   description: "Proposal front matter should have a valid type",
   tags: ["front-matter"],
@@ -251,14 +225,10 @@ export const metadataTypeIsValid = {
     const type: string = frontMatter.type
     if (!type) return
 
-    const validTypes = ["Core", "Networking", "Interface", "Meta"]
-
-    if (!validTypes.some((validType) => type.includes(validType))) {
+    if (!["Meta", "Standard", "Ecosystem"].includes(type)) {
       onError({
         lineNumber: 1,
-        detail: `\`${type}\` is not supported as a value for type. Valid values for type are: ${validTypes.join(
-          ", "
-        )}`,
+        detail: `\`${type}\` is not supported as a value for type`,
       })
     }
   },
@@ -282,6 +252,7 @@ export const metadataStatusIsValid = {
 
     const validStatus = [
       "Idea",
+      "Draft"
       "Review",
       "Accepted",
       "Stagnant",
