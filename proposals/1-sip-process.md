@@ -130,7 +130,7 @@ sponsor—a well-known community member with expertise in the subject matter.
 To begin drafting the proposal, do the following:
 
 - Fork the proposal repository
-- Copy `XXXX-template.md` to `proposals/XXXX-proposal-title.md` (where 
+- Copy `XXXXX-template.md` to `proposals/XXXXX-proposal-title.md` (where 
 "proposal-title" is descriptive)
 - Proposals must be detailed and well-researched. They should provide strong 
 motivation, demonstrate understanding of design implications, and address 
