@@ -61,7 +61,7 @@ export const enforceHeaderStructure = {
 const expectedHeadings = [
   "## Summary",
   "## Motivation",
-  "## New Terminology,
+  "## New Terminology",
   "## Proposal",
   "## Drawbacks",
   "## Alternatives Considered",
@@ -252,7 +252,7 @@ export const metadataStatusIsValid = {
 
     const validStatus = [
       "Idea",
-      "Draft"
+      "Draft",
       "Review",
       "Accepted",
       "Stagnant",
