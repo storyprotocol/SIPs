@@ -110,7 +110,6 @@ export const enforceMetadataStructure = {
 }
 
 const requiredMetadata = {
-  status: {},
   number: {},
   title: {},
   authors: {},
