@@ -41,9 +41,11 @@ use-cases benefit from this solution? Is there any important consideration
 contributors) benefit from this work? 
 
 ## New Terminologies
+
 Is there any new terminology introduced with this proposal? 
 
 ## Proposal
+
 This section explains in detail the proposed changes and how they work. The 
 provided subsections help readers better understand and evaluate the proposal.
 
@@ -53,9 +55,11 @@ documents are to be interpreted as described in [RFC
 8174](https://www.ietf.org/rfc/rfc8174.txt).
 
 ### Drawbacks
+
 Why should this *not* be done? What negative impact does it have?
 
 ### Alternatives Considered
+
 List any alternatives you considered but rejected, and explain why your chosen 
 approach is better.
 
