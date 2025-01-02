@@ -193,8 +193,8 @@ N/A
 
 ## User Impact
 
-This process enables the community to propose network changes, providing flexibility while 
-maintaining consistent standards for all users.
+This process enables the community to propose network changes, providing 
+flexibility while maintaining consistent standards for all users.
 
 ## Alternatives Considered
 
