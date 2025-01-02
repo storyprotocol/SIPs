@@ -61,7 +61,6 @@ export const enforceHeaderStructure = {
 const expectedHeadings = [
   "## Summary",
   "## Motivation",
-  "## New Terminology",
   "## Proposal",
   "## Drawbacks",
   "## Alternatives Considered",

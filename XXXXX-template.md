@@ -35,7 +35,7 @@ use-cases benefit from this solution? Is there any important consideration
 (e.g. edge cases) that should be considered? How will users (or other 
 contributors) benefit from this work? 
 
-## New Terminology
+## New Terminology (optional)
 
 Is there any new terminology introduced with this proposal? 
 

@@ -1,5 +1,5 @@
 ---
-number: '1'
+number: '00001'
 title: SIP Process
 authors: Ramtin M. Seraj
 sponsors: Raul Martinez
@@ -11,13 +11,15 @@ superseded-by:
 extends: 
 ---
 
-## What is a Story Improvement Proposal?
+## Summary
+
+**What is a Story Improvement Proposal?** 
 
 A SIP is a document that proposes standards, guidelines, and recommendations
  for the Story network and its broader ecosystem. It must include complete 
  rationale, context, and sufficient details for the proper implementation.
 
-## Rationale
+## Motivation
 
 Each proposal undergoes review by community members, with careful 
 consideration of security concerns, tradeoffs, and backwards compatibility. 
@@ -27,7 +29,9 @@ This process serves multiple purposes: it helps catch design issues early,
  design decisions. For developers, the proposal acts as a blueprint that 
  guides feature development and implementation.
 
-## When you need to follow this process
+## Proposal 
+
+**When you need to follow this process?**
 
 You need to follow this process if you intend to make "substantial" changes to
 the network architecture and its parameters, software implementation details,
@@ -48,7 +52,7 @@ without altering meaning.
 - Performance improvements to the node software without impacting any other 
 nodes or users.
 
-## SIP Types
+### SIP Types
 
 Story Improvement Proposals (SIPs) fall into these categories:
 
@@ -74,7 +78,7 @@ process, including its structure, lifecycle, and guidelines. For example, a
 proposal in this category might suggest expanding SIPs into additional 
 categories.
 
-## SIP Lifecycle
+### SIP Lifecycle
 
 Every SIP starts as an Idea and follows the lifecycle as it progresses.
 
@@ -116,7 +120,7 @@ flowchart LR
   style fail fill:#ffe8e7,stroke:none
 ```
 
-### Idea
+#### Idea
 
 Every SIP begins as an idea shared with the community through [the Story 
 's community forum](https://forum.story.foundation/). After thorough 
@@ -125,7 +129,7 @@ support, it can be converted
 into a SIP draft. Before this conversion, each idea requires at least one 
 sponsor—a well-known community member with expertise in the subject matter. 
 
-### Draft
+#### Draft
 
 To begin drafting the proposal, do the following:
 
@@ -140,7 +144,7 @@ justified proposals may be rejected.
 - Please use the issue number of the pull request to update the `XXXXX-` in 
 the file name and headers of the proposal.
 
-### Review
+#### Review
 
 During the draft phase, proposal authors are responsible for collecting and 
 incorporating feedback. Key core contributors relevant to the proposal must 
@@ -151,7 +155,7 @@ the Story Foundation's online review meetings. During these meetings, a
 decision about the proposal is made after thorough consideration of various 
 tradeoffs. 
 
-### Accepted
+#### Accepted
 
 Accepted proposals fall into two categories: vital features for immediate 
 implementation and lower-priority features that await a core contributor's 
@@ -161,29 +165,38 @@ their proposals, this is the most effective path to completion—authors
 shouldn't assume other project developers will take on the implementation 
 work.
 
-### Implemented
+#### Implemented
 
 Once all relevant teams have completed development of the SIP's proposal, the 
 SIP moves to "Implemented" status.
 
-### Released
+#### Released
 
 A proposal will have the status Released once it has been implemented, 
 tested, and finally released on the mainnet.
 
-### Stagnant
+#### Stagnant
 
 If a proposal remains inactive for 6 months, it will be marked as stale and 
 closed. However, a new proposal can be submitted if the closed proposal has 
 potential for reaching consensus.
 
-### Withdrawn
+#### Withdrawn
 
 The author has withdrawn the proposal. This decision is final and 
 irreversible. Any future pursuit of this idea will be treated as a new 
 proposal.
 
-## Acknowledgments
+### Drawbacks
+
+N/A
+
+## User Impact
+
+This process enables the community to propose network changes, providing flexibility while 
+maintaining consistent standards for all users.
+
+## Alternatives Considered
 
 This proposal draws inspiration from the excellent work of the authors of:
 
