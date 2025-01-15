@@ -78,6 +78,23 @@ process, including its structure, lifecycle, and guidelines. For example, a
 proposal in this category might suggest expanding SIPs into additional 
 categories.
 
+### Access Control
+
+While this repository is open for everyone to contribute, community members 
+are granted two levels of access to prevent spam, scams, and unrelated posts.
+
+- `Contributor`: Community members who have reviewed draft ideas in the forum
+ can receive this role from maintainers, allowing them to create PRs in this
+ repository. Once this role is gained it stays active for future, unless
+ with active votes of majority of maintainers
+
+- `Maintainer`: Maintainers are community members who facilitate the process 
+by reviewing proposal states and guiding them through the pipeline. Any 
+proposal state change requires a majority vote from maintainers. 
+Monthly open-to-all meetings are held to review SIPs and allocate roles. 
+Through majority voting (2/3), maintainers can grant or revoke both contributor 
+and maintainer roles within the community.
+
 ### SIP Lifecycle
 
 Every SIP starts as an Idea and follows the lifecycle as it progresses.
@@ -123,11 +140,18 @@ flowchart LR
 #### Idea
 
 Every SIP begins as an idea shared with the community through [the Story 
-'s community forum](https://forum.story.foundation/). After thorough 
-discussion and gathering 
-support, it can be converted 
-into a SIP draft. Before this conversion, each idea requires at least one 
-sponsor—a well-known community member with expertise in the subject matter. 
+'s community forum](https://forum.story.foundation/). Please don't 
+create any pull request at this stage. 
+After thorough discussion and gathering support, it can be converted 
+into a SIP pull request in draft. Before this conversion, each idea requires 
+at least one sponsor. Sponsors are well-known community members who either 
+benefit from the proposal or have deep expertise in the subject matter.
+
+When an idea has received sufficient feedback and is ready to move into a 
+draft, it can be converted into a SIP draft pull request. Opening up PRs 
+in this repo requires a "contributor" role. If an author of the proposal 
+does not already have a contributor role, the maintainers will add one 
+or more of the proposal's authors to the contributor list.
 
 #### Draft
 
@@ -163,7 +187,9 @@ attention. Each accepted proposal must have a tracking issue in the Story
 repository. While proposal authors aren't necessary required to implement 
 their proposals, this is the most effective path to completion—authors 
 shouldn't assume other project developers will take on the implementation 
-work.
+work. Unless a proposal is in living state, the proposal becomes immutable 
+and only acceptable additions to the proposal is security considerations 
+discovered after the fact.
 
 #### Implemented
 
