@@ -1,6 +1,3 @@
-- [Overview](#overview)
-- [Current Maintainers](#current-maintainers)
-
 ## Overview
 
 This document holds the list of maintainers.
