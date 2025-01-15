@@ -1,4 +1,4 @@
-## Overview
+# Overview
 
 This document holds the list of contributors.
 
