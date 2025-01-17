@@ -144,8 +144,8 @@ Every SIP begins as an idea shared with the community through [the Story
 create any pull request at this stage. 
 After thorough discussion and gathering support, it can be converted 
 into a SIP pull request in draft. Before this conversion, each idea requires 
-at least one sponsor. Sponsors are well-known community members who either 
-benefit from the proposal or have deep expertise in the subject matter.
+at least one sponsor. Sponsors can be any well-known community members who 
+either benefit from the proposal or have deep expertise in the subject matter.
 
 When an idea has received sufficient feedback and is ready to move into a 
 draft, it can be converted into a SIP draft pull request. Opening up PRs 
