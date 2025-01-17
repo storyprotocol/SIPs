@@ -63,7 +63,7 @@ the core APIs and user interface. For example, a proposal in this category
 can discuss changes to the block production details or node level networking 
 parameters.
 
-- **Ecosystem SIP:**A proposal describing application-level standards, 
+- **Ecosystem SIP:** A proposal describing application-level standards, 
 conventions and specifications that may affect applications, tools, and 
 services built on top of the Story network. These proposals outline 
 conventions, interfaces, and protocols that ecosystem participants can follow 
