@@ -249,7 +249,6 @@ export const metadataStatusIsValid = {
     if (!status) return
 
     const validStatus = [
-      "Idea",
       "Draft",
       "Review",
       "Accepted",

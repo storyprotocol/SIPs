@@ -9,8 +9,8 @@ status: Draft
 supersedes: (optional - fill this in if the SIP supersedes a previous SIP)
 superseded-by: (optional - fill this in if the SIP is superseded by a 
 subsequent SIP)
-extends: (optional - fill this in if the SIP extends the design of a previous
- SIP)
+extends: (optional - fill this in if the SIP extends the design of a 
+previous SIP)
 ---
 
 ## Summary
