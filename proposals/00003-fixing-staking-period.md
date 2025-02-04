@@ -1,6 +1,6 @@
 ---
 number: '00003'
-title: Fixing the 90 days staking period misconfiguration
+title: Fixing the 90 days staking period config
 authors: Ze Huang (ze.huang@piplabs.xyz)
 sponsors: Ramtin Seraj (ramtin.seraj@piplabs.xyz)
 created: 2025-01-04
