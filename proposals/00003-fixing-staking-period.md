@@ -29,8 +29,7 @@ always preferring staking 30 days period since it yields the best
 rewards overall and makes 360 days and 540 days staking periods 
 unattractive.
 
-Community discussion: 
-https://forum.story.foundation/t/increase-the-30-days-staking-period-to-90-days/43/1 
+[Community discussion:](https://forum.story.foundation/t/increase-the-30-days-staking-period-to-90-days/43/1)
 
 ## Motivation
 
