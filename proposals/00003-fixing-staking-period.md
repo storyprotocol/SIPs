@@ -13,17 +13,24 @@ extends:
 
 ## Summary
 
-Story supports native staking periods. Users stake their IP tokens for longer staking periods will get higher reward multipliers.
+Story supports native staking periods. Users stake their IP tokens 
+for longer staking periods will get higher reward multipliers.
 
-Based on the staking spec, the initial staking periods and the corresponding reward multipliers should be:
+Based on the staking spec, the initial staking periods and the 
+corresponding reward multipliers should be:
 
 - 90 days - 1.051
 - 360 days - 1.16
 - 540 days - 1.34
 
-However, due to a misconfiguration on the genesis file, the current 90-day period is configured as 30 days. This may result in stakers always preferring staking 30 days period since it yields the best rewards overall and makes 360 days and 540 days staking periods unattractive.
+However, due to a misconfiguration on the genesis file, the current 
+90-day period is configured as 30 days. This may result in stakers 
+always preferring staking 30 days period since it yields the best 
+rewards overall and makes 360 days and 540 days staking periods 
+unattractive.
 
-Community discussion: https://forum.story.foundation/t/increase-the-30-days-staking-period-to-90-days/43/1 
+Community discussion: 
+https://forum.story.foundation/t/increase-the-30-days-staking-period-to-90-days/43/1 
 
 ## Motivation
 
