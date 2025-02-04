@@ -37,7 +37,7 @@ Fixing this issue unlocks staking for 90 days option for users.
 
 ## Proposal
 
-Change of config from 30 days (wrong value) to 60 days.
+Change of config from 30 days (wrong value) to 90 days.
 
 ### Drawbacks
 
