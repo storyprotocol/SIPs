@@ -1,6 +1,6 @@
 ---
 number: '00004'
-title: Emit reward distribution events with validator address
+title: Emit reward distribution events
 authors: Ze Huang (ze.huang@piplabs.xyz)
 sponsors: Ramtin Seraj (ramtin.seraj@piplabs.xyz)
 created: 2025-01-04
@@ -16,8 +16,7 @@ extends:
 This SIP propose adding a new event type to capture the staking reward 
 distribution. It helps off-chain tools to better track the rewards. 
 
-forum discussion: 
-https://forum.story.foundation/t/emit-reward-distribution-events-with-validator-address/46
+[forum discussion link](https://forum.story.foundation/t/emit-reward-distribution-events-with-validator-address/46)
 
 ## Motivation
 
