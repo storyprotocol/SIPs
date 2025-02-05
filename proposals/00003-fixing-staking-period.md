@@ -5,7 +5,7 @@ authors: Ze Huang (ze.huang@piplabs.xyz)
 sponsors: Ramtin Seraj (ramtin.seraj@piplabs.xyz)
 created: 2025-01-04
 type: Standard
-status: Draft
+status: Accepted
 supersedes: 
 superseded-by: 
 extends: 
