@@ -1,85 +1,262 @@
 ---
-number: 'XXXXX' (update this part after PR creation)
+number: 'XXXXX'
 title: Title of SIP
-authors: First Author's Name (author1@example.org), Second Author's name (author2@example.org)
+authors: 
+  - First Author's Name (author1@example.org)
+  - Second Author's name (author2@example.org)
 sponsors: First Sponsor's Name (expert@example.org)
-created: (fill me in with today's date, YYYY-MM-DD)
-type: Standard/Ecosystem/Meta
+created: 2025-06-27
+type: Standard
 status: Draft
-supersedes: (optional - fill this in if the SIP supersedes a previous SIP)
-superseded-by: (optional - fill this in if the SIP is superseded by a 
-subsequent SIP)
-extends: (optional - fill this in if the SIP extends the design of a 
-previous SIP)
+supersedes: null
+superseded-by: null
+extends: null
 ---
+
+## Abstract
+
+Provide a concise technical summary of the proposal in 2-3 sentences. This should be understandable to someone familiar with the Story Protocol ecosystem but not necessarily the specific problem domain.
 
 ## Summary
 
-Provide a brief summary of this proposal and why it's needed. Keep it 
-concise—details should be provided in the below sections.
+Provide a brief summary of this proposal and why it's needed. Keep it concise—details should be provided in the below sections.
 
-Please include links to relevant community discussion threads.
+Include links to relevant community discussion threads, Discord conversations, or forum posts.
 
 ## Motivation
 
+### Problem Statement
 Does this proposal address an existing problem or create new opportunities?
-If addressing a problem, please describe it thoroughly: Who are the affected 
-users? Why is it problematic? What data supports this assessment? What related 
-work has been done?
-If not addressing a problem, what new opportunities does it create? Please 
-provide background information, data, or context to illustrate the potential 
-impact. 
 
-What defines a successful solution for this problem? What are some examples of 
-use-cases benefit from this solution? Is there any important consideration 
-(e.g. edge cases) that should be considered? How will users (or other 
-contributors) benefit from this work? 
+If addressing a problem:
+- Who are the affected users (developers, validators, end users, etc.)?
+- Why is it problematic?
+- What data or evidence supports this assessment?
+- What is the current workaround, if any?
+
+If creating opportunities:
+- What new capabilities does this enable?
+- What is the potential impact on the ecosystem?
+
+### Success Criteria
+- What defines a successful solution?
+- What are concrete use cases that benefit from this solution?
+- What metrics will be used to measure success?
+
+### Scope and Non-Goals
+- What is explicitly in scope for this proposal?
+- What related issues are intentionally out of scope?
 
 ## New Terminology (optional)
 
-Is there any new terminology introduced with this proposal? 
+Define any new terms, concepts, or terminology introduced by this proposal.
 
-## Proposal
+## Specification
 
-This section explains in detail the proposed changes and how they work. The 
-provided subsections help readers better understand and evaluate the proposal.
+This section explains in detail the proposed changes and how they work. Use RFC 2119 keywords ("MUST", "SHOULD", "MAY", etc.) where appropriate.
 
-The key words "MUST", "REQUIRED", ... in SIP
-documents are to be interpreted as described in [RFC
-2119](https://www.ietf.org/rfc/rfc2119.txt) and [RFC
-8174](https://www.ietf.org/rfc/rfc8174.txt).
+### Technical Design
 
-### Drawbacks
+Provide detailed technical specifications including:
+- Protocol changes
+- API modifications
+- Data structures
+- Message formats
+- State transitions
 
-Why should this *not* be done? What negative impact does it have?
+### Implementation Requirements
+
+What are the key requirements any implementation must satisfy?
+
+### Reference Implementation (optional)
+
+Provide pseudocode, algorithms, or implementation sketches where helpful.
+
+## Rationale and Design Decisions
 
 ### Alternatives Considered
 
-List any alternatives you considered but rejected, and explain why your chosen 
-approach is better.
+List alternatives you considered but rejected, explaining why your chosen approach is superior:
+- Alternative A: Description, pros, cons, why rejected
+- Alternative B: Description, pros, cons, why rejected
+
+### Design Trade-offs
+
+What trade-offs does this design make and why?
+
+### Drawbacks
+
+Why should this *not* be done? What negative impacts might it have?
+
+## Impact Analysis
 
 ### User Impact
 
-What changes will users experience, and what is the rollout plan for this 
-feature? Does the design conform to the backwards & forwards compatibility?
+- What changes will end users experience?
+- How will this affect different user personas (developers, validators, IP creators, etc.)?
+- What is the migration path for existing users?
 
-### Performance Implications (optional)
+### Developer Impact
 
-What are the expected performance implications and how will they be measured?
-Are microbenchmarks included to assess performance?
-What end-to-end tests and benchmarks should be implemented? If these aren't 
-part of the initial design, what is the plan to ensure their creation?
+- How does this affect SDK development?
+- What new APIs or tools are needed?
+- How will this impact existing development workflows?
 
-### Implementation Considerations (optional)
+### Network Impact
 
-Is there any important aspect and details needed to implement this proposal 
+- How does this affect network topology, traffic patterns, or resource usage?
+- What are the implications for network upgrades and governance?
 
-## Related Issues (optional)
+### Economic Impact (optional if not applicable)
 
-Which related issues fall outside the scope of this proposal but may be worth 
-exploring separately in the future?
+- Does this change economic incentives or token economics?
+- What are the cost implications for different network participants?
+- How might this affect network value accrual?
 
-## Prior Art (optional)
+## Compatibility
 
-Have other networks implemented similar ideas or features, and what has been 
-their community's experience?
+### Backward Compatibility
+
+- Is this change backward compatible?
+- If not, what is the migration strategy?
+- How will legacy systems be supported?
+
+### Forward Compatibility
+
+- How does this design accommodate future enhancements?
+- What extensibility mechanisms are provided?
+
+### Ecosystem Integration
+
+- How will this work with existing tools and infrastructure?
+- What changes are needed in wallets, explorers, SDKs?
+- How does this interact with other protocols in the ecosystem?
+
+## Security Considerations
+
+- What are the security implications of this change?
+- What new attack vectors might be introduced?
+- How are these risks mitigated?
+- What security assumptions does this make?
+- Are there any cryptographic considerations?
+
+## Performance Implications (optional)
+
+### Computational Impact
+- Expected changes in CPU usage, memory consumption
+- Gas cost implications for smart contracts
+- Benchmarking methodology
+
+### Network Impact
+- Bandwidth requirements
+- Latency implications
+- Scalability considerations
+
+### Storage Impact
+- State growth implications
+- Archive node requirements
+
+## Implementation Plan
+
+### Development Phases
+
+Break down implementation into logical phases:
+1. Phase 1: Core implementation
+2. Phase 2: Integration and testing
+3. Phase 3: Deployment and migration
+
+### Testing Strategy
+
+- Unit testing approach
+- Integration testing requirements
+- Network testing on testnets
+- Security auditing requirements
+
+### Deployment Strategy
+
+- Rollout phases (testnet → mainnet)
+- Feature flags or gradual activation
+- Monitoring and rollback procedures
+
+### Maintenance
+
+- Who will maintain this code?
+- What ongoing operational requirements exist?
+- How will this be monitored and debugged?
+
+## Documentation and Examples
+
+### Tutorial and Usage Examples
+
+Provide end-to-end examples showing:
+- How developers will use new features
+- Integration patterns
+- Common use cases
+
+The examples should be written as user-facing documentation, not internal technical specs.
+
+### Migration Guide (optional - required only for breaking changes)
+
+If this changes existing functionality, provide:
+- Step-by-step migration instructions
+- Code examples showing before/after
+- Timeline for deprecation of old methods
+
+## Community Consensus
+
+### Discussion Summary
+
+Document community feedback and discussions:
+- Links to [forum discussions](https://forum.story.foundation/), Discord conversations
+- Summary of key feedback themes
+- How feedback was incorporated into the design
+
+### Stakeholder Impact
+
+- Which stakeholders are most affected?
+- What is their level of support or concern?
+- How were conflicts resolved?
+
+### Governance Considerations
+
+- What governance mechanisms are needed for adoption?
+- Are there any voting or consensus requirements?
+- How will this be coordinated with other network upgrades?
+
+## Dependencies
+
+### Technical Dependencies
+
+- Does this require changes to other components?
+- What external libraries or systems are needed?
+- Are there version compatibility requirements?
+
+### Process Dependencies
+
+- What other SIPs must be implemented first?
+- Are there coordination requirements with other teams?
+- What approvals or reviews are needed?
+
+## Related Work (optional)
+
+### Prior Art
+
+- Have other networks implemented similar features?
+- What can we learn from their experience?
+- How does this approach differ from existing solutions?
+
+### Future Work
+
+- What related improvements could build on this?
+- What issues are intentionally deferred to future proposals?
+
+## Appendices (optional)
+
+### A. Reference Materials
+
+Links to relevant specifications, papers, or documentation.
+
+### B. Change Log
+
+Track major revisions to this document:
+- Version 1.0 (YYYY-MM-DD): Initial draft
