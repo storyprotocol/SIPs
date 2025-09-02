@@ -5,9 +5,9 @@ authors:
   - First Author's Name (author1@example.org)
   - Second Author's name (author2@example.org)
 sponsors: First Sponsor's Name (expert@example.org)
-created: 2025-06-27
-type: Standard
-status: Draft
+created: 'XXXXX'
+type: Standard/Ecosystem/Meta
+status: Draft/Accepted/Implemented/Released/Stagnant/Withdrawn
 supersedes: null
 superseded-by: null
 extends: null
@@ -96,13 +96,13 @@ Why should this *not* be done? What negative impacts might it have?
 - How will this affect different user personas (developers, validators, IP creators, etc.)?
 - What is the migration path for existing users?
 
-### Developer Impact
+### Developer Impact (optional if not applicable)
 
 - How does this affect SDK development?
 - What new APIs or tools are needed?
 - How will this impact existing development workflows?
 
-### Network Impact
+### Network Impact (optional if not applicable)
 
 - How does this affect network topology, traffic patterns, or resource usage?
 - What are the implications for network upgrades and governance?
@@ -140,7 +140,7 @@ Why should this *not* be done? What negative impacts might it have?
 - What security assumptions does this make?
 - Are there any cryptographic considerations?
 
-## Performance Implications (optional)
+## Technical Impact (optional if not applicable)
 
 ### Computational Impact
 - Expected changes in CPU usage, memory consumption
@@ -156,44 +156,7 @@ Why should this *not* be done? What negative impacts might it have?
 - State growth implications
 - Archive node requirements
 
-## Implementation Plan
-
-### Development Phases
-
-Break down implementation into logical phases:
-1. Phase 1: Core implementation
-2. Phase 2: Integration and testing
-3. Phase 3: Deployment and migration
-
-### Testing Strategy
-
-- Unit testing approach
-- Integration testing requirements
-- Network testing on testnets
-- Security auditing requirements
-
-### Deployment Strategy
-
-- Rollout phases (testnet → mainnet)
-- Feature flags or gradual activation
-- Monitoring and rollback procedures
-
-### Maintenance
-
-- Who will maintain this code?
-- What ongoing operational requirements exist?
-- How will this be monitored and debugged?
-
 ## Documentation and Examples
-
-### Tutorial and Usage Examples
-
-Provide end-to-end examples showing:
-- How developers will use new features
-- Integration patterns
-- Common use cases
-
-The examples should be written as user-facing documentation, not internal technical specs.
 
 ### Migration Guide (optional - required only for breaking changes)
 
@@ -217,11 +180,6 @@ Document community feedback and discussions:
 - What is their level of support or concern?
 - How were conflicts resolved?
 
-### Governance Considerations
-
-- What governance mechanisms are needed for adoption?
-- Are there any voting or consensus requirements?
-- How will this be coordinated with other network upgrades?
 
 ## Dependencies
 
