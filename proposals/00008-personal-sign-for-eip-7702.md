@@ -50,7 +50,7 @@ message that unambiguously binds:
 The execution client MUST treat `personal_sign` and `eth_sign` authorizations 
 as semantically equivalent once verified.
 
-Transactions containing `personal_sign` authorizations includes an explicit 
+Transactions containing `personal_sign` authorizations MUST include an explicit 
 signaling 
 mechanism allowing the execution client to distinguish the signature type 
 during verification.
