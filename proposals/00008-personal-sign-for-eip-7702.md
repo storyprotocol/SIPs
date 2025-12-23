@@ -1,6 +1,6 @@
 ---
 number: '00008'
-title: Support personal_sign Authorization for EIP-7702
+title: Support personal_sign for EIP-7702
 authors: Kingter Wang (kingter@piplabs.xyz)
 sponsors: Leo Chen (leo@piplabs.xyz)
 created: 2025-12-22
