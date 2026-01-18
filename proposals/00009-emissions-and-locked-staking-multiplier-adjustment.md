@@ -1,6 +1,6 @@
 ---
 number: '00009'
-title: Emissions Reduction and Locked Staking Multiplier Adjustment
+title: Emissions and Staking Multiplier Adjust
 authors: Jack Chan (jack.chan@piplabs.xyz)
 sponsors: Leo Chen (leo@piplabs.xyz)
 created: 2026-01-18
@@ -50,11 +50,11 @@ yields, and it reduces overall inflationary pressure on circulating supply.
 
 ### Token Emissions Adjustment
 
-| Parameter | Pre-launch Settings | Actual Rate | Adjustments Proposed |
+| Parameter | Pre-launch | Actual | Proposed |
 | --- | --- | --- | --- |
 | IPs minted per block | 1.9290 IP | 1.9290 IP | 1.1657 IP |
-| Blocks (per year estimates) | 10,368,000 (estimated) | ~13,140,000 (actual) | 13,140,000 |
-| Annual emissions | 20,000,000 IP (estimated) | ~25,347,060 IP (actual) | 15,315,000 IP |
+| Blocks/year | 10,368,000 (est) | ~13,140,000 | 13,140,000 |
+| Annual emissions | 20,000,000 IP (est) | ~25,347,060 IP | 15,315,000 IP |
 
 The emissions per block is now recalculated to be 1.1657 IP tokens per block
 produced to achieve the target annual emission of 15,315,000 IPs.
