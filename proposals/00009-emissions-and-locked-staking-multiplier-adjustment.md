@@ -5,7 +5,7 @@ authors: Jack Chan (jack.chan@piplabs.xyz)
 sponsors: Leo Chen (leo@piplabs.xyz)
 created: 2026-01-18
 type: Standard
-status: Draft
+status: Released
 supersedes:
 superseded-by:
 extends:
