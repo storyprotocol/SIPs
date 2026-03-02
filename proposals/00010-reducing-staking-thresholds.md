@@ -5,7 +5,7 @@ authors: Jack Chan (jack.chan@piplabs.xyz)
 sponsors: Ramtin Seraj (ramtin.seraj@piplabs.xyz)
 created: 2026-01-18
 type: Standard
-status: Draft
+status: Accepted
 supersedes:
 superseded-by:
 extends:
