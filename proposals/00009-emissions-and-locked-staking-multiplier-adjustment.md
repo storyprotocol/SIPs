@@ -52,11 +52,11 @@ yields, and it reduces overall inflationary pressure on circulating supply.
 
 | Parameter | Pre-launch | Actual | Proposed |
 | --- | --- | --- | --- |
-| IPs minted per block | 1.9290 IP | 1.9290 IP | 1.1657 IP |
+| IPs minted per block | 1.9290 IP | 1.9290 IP | 1.1655 IP |
 | Blocks/year | 10,368,000 (est) | ~13,140,000 | 13,140,000 |
 | Annual emissions | 20,000,000 IP (est) | ~25,347,060 IP | 15,315,000 IP |
 
-The emissions per block is now recalculated to be 1.1657 IP tokens per block
+The emissions per block is now recalculated to be 1.1655 IP tokens per block
 produced to achieve the target annual emission of 15,315,000 IPs.
 
 ### Locked Staking Multiplier Adjustment
