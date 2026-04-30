@@ -90,9 +90,12 @@ become inactive and stop earning staking rewards.
 
 To protect delegators and give exiting validators time to wind
 down operations in an orderly fashion, a structured exit process
-will be followed for all validators expected to leave the active
-set. The exit process distinguishes between locked and unlocked
-validators:
+will be followed for all validators. The Foundation may provide
+additional transition support to eligible exiting validators who
+complete the structured exit process and maintain node operations
+through the applicable notice period. Further details will be
+communicated directly to affected validators. The exit process
+distinguishes between locked and unlocked validators:
 
 - **Locked validators** MUST provide 3 weeks' notice before
   exiting. Affected delegators will be notified so they can
@@ -111,12 +114,6 @@ principal on its own self-delegation.
 
 ### Drawbacks
 
-- **Reduced decentralization.** Fewer active validators means
-  consensus authority is concentrated among fewer entities. This
-  increases the theoretical risk of collusion, though 21
-  validators with a BFT threshold still requires compromising 7+
-  independent operators.
-
 - **Validator displacement.** Up to 59 currently active validators
   will lose their active status and associated staking rewards.
   This may cause friction with existing validator partners.
@@ -129,6 +126,12 @@ principal on its own self-delegation.
 - **Barrier to entry.** A smaller set raises the minimum stake
   required to enter the active set, potentially discouraging new
   validators from joining the network.
+
+- **Reduced decentralization.** Fewer active validators means
+  consensus authority is concentrated among fewer entities. This
+  increases the theoretical risk of collusion, though 21
+  validators with a BFT threshold still requires compromising 7+
+  independent operators and is thus not considered a risk factor.
 
 ### User Impact
 
@@ -145,11 +148,22 @@ provides notice periods (3 weeks for locked, 1 week for
 unlocked validators) to allow delegators to take action
 without loss of funds.
 
-**Network users.** End users of the network should experience
-improved block finality times and more consistent network
-performance after the transition.
+### Validator Acknowledgement
 
-**Rollout plan.**
+The Foundation recognizes and appreciates the work of all
+validators who have supported the Story network to date. Many
+operators have contributed time, infrastructure, operational
+support, and ecosystem participation during an important phase
+of the network’s development.
+
+While this proposal would reduce the number of active validator
+slots, that change should not be read as a dismissal of the
+contributions made by validators who may no longer remain in the
+active set. The transition plan is intended to help affected
+validators and delegators move through the change in an orderly
+way, with minimal disruption and no loss of delegated funds.
+
+### Rollout plan
 
 1. SIP accepted and upgrade release date announced.
 2. Validators expected to exit the active set are identified and
